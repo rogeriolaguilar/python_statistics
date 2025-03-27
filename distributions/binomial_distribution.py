@@ -23,15 +23,23 @@ def print_response(r):
 print(f'Each box has {n} eggs. Eggs has a {p * 100}% chance of being rotten.')
 print()
 print('What is the probability of finding 2 rotten eggs in a box?')
-r = binom.pmf(2, n, p)
+r = binom.pmf(2, n, p) # probability mass function
 print_response(r)
 
 print()
 print('What is the probability of finding 2 or less rotten eggs in a box?')
-r = binom.cdf(2, n, p)
+r = binom.cdf(2, n, p) # cumulative distribution function
 print_response(r)
 
 print()
 print('What is the probability of finding more than 2 rotten eggs in a box?')
-r = binom.sf(2, n, p)
+r = binom.sf(2, n, p) # survival function
 print_response(r)
+
+
+# Summary:
+# pmf → Exact probability of k successes.
+
+# cdf → Probability of ≤ k successes.
+
+# sf → Probability of > k successes (1 - CDF).

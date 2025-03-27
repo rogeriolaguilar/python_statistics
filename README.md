@@ -16,10 +16,17 @@ Create a virtual environment:
 make venv
 ```
 
-Activate the virutal environment
+Activate the virutal environment:
 
 ```
 . venv/bin/activate
+```
+
+For VScode terminal, add this in settings.json
+
+```json
+  "python.terminal.activateEnvironment": true,
+  "python.venvPath": "Add_Venv_DirectoryPath_here",
 ```
 
 Install libraries
