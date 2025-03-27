@@ -8,7 +8,21 @@ Statistics examples in Python.
 
 ## Setup
 
-Installing libraries
+For the first time:
+
+Create a virtual environment:
+
+```
+make venv
+```
+
+Activate the virutal environment
+
+```
+. venv/bin/activate
+```
+
+Install libraries
 
 ```
 make setup

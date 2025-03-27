@@ -1,6 +1,7 @@
-setup:
+venv:
 	python3 -m venv venv
-	. venv/bin/activate
+
+setup:
 	python -m ensurepip --upgrade
 	python -m pip install --upgrade setuptools
 	pip install --upgrade pip
