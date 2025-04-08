@@ -1,7 +1,8 @@
 import pingouin
 weight = [12,8,15,13,10,12,14,11,12,13,15,19,15,12,13,16,15]
 
-# A researcher wants to test if the average weight loss of a group of people is greater than 12 kg. He want it to be 95% sure of the result (5% of significance level).
+# A researcher wants to test if the average weight loss of a group of people is greater than 12 kg. 
+# He want it to be 95% sure of the result (5% of significance level).
 
 # null hypothesis (H0): <= 12
 # alternative hypothesis (H1): > 12
@@ -23,8 +24,8 @@ T-test  2.006838   16     greater  0.030985  [12.16, inf]  0.48673  2.494  0.608
 # T: test statistic
 # dof: degrees of freedom (number of observations - 1)
 # alternative: type of test (one-tailed or two-tailed)
-# p-val: p-value (probability of observing the data given the null hypothesis is true)
-# CI95%: 95% confidence interval
+# p-val: probability of error if we reject the null hypothesis. If p-val < significance level, we reject the null hypothesis.
+# CI95%: 95% confidence interval = 1 - significance level
 
 # As p-val is less than 0.05, we reject the null hypothesis and accept the alternative hypothesis.
 # The average weight loss of the group is greater than 12 kg.
